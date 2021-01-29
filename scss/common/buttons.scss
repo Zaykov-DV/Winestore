@@ -1,0 +1,45 @@
+.promo__button {
+  background-color: transparent;
+  border: 1px solid #E2B024;
+  color: $default-color;
+  padding: 22px 48px;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 100%;
+  &:hover {
+    background-color: $primary-color;
+    color: #1F1F1F;
+  }
+}
+
+.component__button {
+  border: none;
+  background-color: transparent;
+  font-family: Poppin, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: $default-color;
+  border-bottom: 1px solid #FFFFFF;
+  &:hover {
+    color: $primary-color;
+    border-bottom: 1px solid #E2B024;
+  }
+}
+
+.component__button-prev {
+  position: absolute;
+  top: 46%;
+  right: 95%;
+  z-index: 3;
+}
+
+.component__button-next {
+  position: absolute;
+  top: 46%;
+  left: 95%;
+  z-index: 3;
+}

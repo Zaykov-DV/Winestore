@@ -1,0 +1,26 @@
+{
+  "name": "winestore",
+  "version": "1.0.0",
+  "description": "Winestore",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^5.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zaykov-DV/Winestore.git"
+  },
+  "author": "Dmitrii Zaikov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zaykov-DV/Winestore/issues"
+  },
+  "homepage": "https://github.com/Zaykov-DV/Winestore#readme"
+}
