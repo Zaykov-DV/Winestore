@@ -1,0 +1,92 @@
+.header__link {
+  color: $default-color;
+  font-family: $mainFont;
+  font-size: 12px;
+  line-height: 18px;
+  &:hover {
+    color: $primary-color;
+  }
+  @media screen and (max-width: 480px) {
+    &:first-child {
+      width: 20%;
+    }
+  }
+}
+
+.navigation__link {
+  color: $default-color;
+  font-family: $titleFont;
+  font-size: 16px;
+  padding: 5px 0;
+  border-bottom: 1px solid transparent;
+  &:hover {
+    color: $primary-color;
+    border-bottom: 1px solid $primary-color;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 12px;
+    margin-bottom: 40px;
+    margin-right: 10px;
+  }
+}
+
+.heading__link {
+  color: $primary-color;
+  font-family: $titleFont;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 9px;
+  &:hover {
+    color: $primary-color;
+    text-decoration: underline;
+  }
+}
+
+.store__link {
+  font-family: Poppin, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  margin-right: 72px;
+  color: $default-color;
+  &:last-child { margin-right: 0 }
+  &:hover {
+    color: $primary-color;
+    border-bottom: 1px;
+    border-bottom: 1px solid $primary-color;
+    z-index: 1;
+  }
+  @media screen and (max-width: 500px) {
+    font-size: 18px;
+    margin-right: 36px;
+  }
+}
+
+.store__link-title {
+  font-family: $titleFont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 10px;
+  color: $default-color;
+  &:hover {
+    color: $primary-color;
+    border-bottom: 1px;
+    border-bottom: 1px solid $primary-color;
+  }
+}
+
+.events__link {
+  font-family: $titleFont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 10px;
+  color: $default-color;
+  &:hover {
+    color: $primary-color;
+    border-bottom: 1px;
+    border-bottom: 1px solid $primary-color;
+  }
+}

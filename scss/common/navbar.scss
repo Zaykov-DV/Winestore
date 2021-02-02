@@ -2,44 +2,48 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 11px;
-  margin-bottom: 13px;
+  margin: 11px auto 13px;
+  width: 98%;
 }
 
-.header__links {
+.header__links, .header__images {
   width: 35%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media screen and (max-width: 750px) {
+    flex-direction: column;
+    .header__images {
+      margin-top: 10px;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 70%;
+    }
+  }
 }
 
 .navigation {
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  padding: 22px 0;
+  margin-bottom: 190px;
+    @media screen and (max-width: $tableWidth) {
+      margin-bottom: 100px;
+    }
+}
+
+.navigation__list {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid white;
-  border-top: 1px solid white;
-  margin-bottom: 190px;
-  padding: 22px 0;
-}
-
-.header__link {
-  color: $default-color;
-  font-family: $mainFont;
-  font-size: 12px;
-  line-height: 18px;
-}
-
-.navigation__link {
-  color: $default-color;
-  font-family: $titleFont;
-  font-size: 16px;
-  padding: 5px 0;
-  border-bottom: 1px solid transparent;
-  &:hover {
-    color: $primary-color;
-    border-bottom: 1px solid $primary-color;
-  }
+  width: 98%;
+  margin: 0 auto;
+    @media screen and (max-width: $tableWidth) {
+      justify-content: center;
+      flex-wrap: wrap;
+      height: 80px;
+      li {padding: 10px 0}
+    }
 }
 
 .heading {
@@ -49,40 +53,8 @@
   flex-direction: column;
 }
 
-.heading__pre-title {
-  font-family: $titleFont;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 14px;
-}
-
-.heading__title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: $titleFont;
-  font-weight: normal;
-  font-size: 96px;
-  line-height: 56px;
-}
-
-.heading__description {
-  font-family: $mainFont;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: center;
-  width: 63%;
-}
-
-.heading__link {
-  color: $primary-color;
-  font-family: $titleFont;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 9px;
-  &:hover {
-    color: $primary-color;
-    text-decoration: underline;
+.heading__image {
+  @media screen and (max-width: $tableWidth) {
+    width: 70%;
   }
 }

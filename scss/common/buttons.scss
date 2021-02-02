@@ -3,7 +3,7 @@
   border: 1px solid #E2B024;
   color: $default-color;
   padding: 22px 48px;
-  font-family: Poppins, sans-serif;
+  font-family: Poppin, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -11,6 +11,29 @@
   &:hover {
     background-color: $primary-color;
     color: #1F1F1F;
+  }
+  @media screen and (max-width: 1169px) {
+    width: 70%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  @media screen and (max-width: 480px) {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+.inputs__button {
+  background-color: $primary-color;
+  border: 1px solid #E2B024;
+  color: #1F1F1F;;
+  padding: 8px 54px;
+  font-family: Poppin, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  &:hover {
+    background-color: darken($primary-color, 5%);
   }
 }
 
@@ -35,11 +58,38 @@
   top: 46%;
   right: 95%;
   z-index: 3;
+  @media screen and (max-width: 650px) {
+    top: 45%;
+    right: 85%;
+  }
+  @media screen and (max-width: 500px) {
+    top: 43%;
+    right: 84%;
+  }
 }
 
 .component__button-next {
   position: absolute;
   top: 46%;
-  left: 95%;
+  left: 96%;
   z-index: 3;
+  @media screen and (max-width: 650px) {
+    top: 45%;
+    left: 85%;
+  }
+  @media screen and (max-width: 500px) {
+    top: 43%;
+    left: 84%;
+  }
+}
+
+.subscribe__button {
+  background: #E2B024;
+  font-family: Poppin, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  color: #1F1F1F;
+  padding: 18px;
 }

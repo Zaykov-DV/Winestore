@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -19,21 +19,41 @@
             <a class="header__link" href="#">Login</a>
             <a class="header__link" href="#">Register</a>
             <a class="header__link" href="#">Wish List (0)</a>
-            <a class="header__link" href="#"><img src="./img/icons/search.svg" alt="search"></a>
-            <a class="header__link" href="#"><img src="./img/icons/bag.svg" alt="basket"></a>
-            <a class="header__link" href="#"><img src="./img/icons/menu.png" alt="menu"></a>
+            <div class="header__images">
+                <a class="header__link" href="#"><img src="./img/icons/search.svg" alt="search"></a>
+                <a class="header__link" href="#"><img src="./img/icons/bag.svg" alt="basket"></a>
+                <a class="header__link" href="#"><img src="./img/icons/menu.png" alt="menu"></a>
+            </div>
         </nav>
     </div>
 
     <nav class="navigation">
-            <a class="navigation__link title" href="#">Home</a>
-            <a class="navigation__link title" href="#">Vintage</a>
-            <a class="navigation__link title" href="#">Imperial</a>
-            <a class="navigation__link title" href="#">Sparkling</a>
-            <a class="navigation__link title" href="#">Accessories</a>
-            <a class="navigation__link title" href="#">Blog</a>
-            <a class="navigation__link title" href="#">Product Details</a>
-            <a class="navigation__link title" href="#">Contact</a>
+        <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a class="navigation__link title" href="#">Home</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link title" href="#">Vintage</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link title" href="#">Imperial</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link title" href="#">Sparkling</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link title" href="#">Accessories</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link title" href="#">Blog</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link title" href="#">Product Details</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link title" href="#">Contact</a>
+                </li>
+        </ul>
         </nav>
 
     <div class="heading">
@@ -49,8 +69,8 @@
     </div>
 </header>
 
-<section class="promo__section">
-    <div class="promo">
+<section class="promo">
+    <div class="promo__container">
         <div class="promo__description">
             <p class="promo__new">New Wines</p>
             <h2 class="promo__title">Merlot</h2>
@@ -70,7 +90,8 @@
     </div>
 </section>
 
-<section class="store__section">
+<section class="store">
+<div class="store__container">
 
     <div class="store__title">
         <h2>Futured&nbsp;</h2>
@@ -84,127 +105,133 @@
         </div>
 
     <table class="store__products">
-        <tr class="store__products-tr">
-            <td class="store__products-td">
-                <div class="store__offer"><p class="store__text">30% off</p></div>
-                <div class="store__image"><img src="./img/screenshot-www.planetwine.co.nz-2020.10%201.png" alt="wine"></div>
-                <p class="store__name">Silver Oak</p>
-                <div class="store__price">
-                    <p class="store__discount">$500.00</p>
-                    <p class="store__price">$450.00</p>
-                </div>
-            </td>
-            <td class="store__products-td">
-                <div class="store__offer"><p class="store__text">30% off</p></div>
-                <div class="store__image"><img src="./img/screenshot-www.planetwine.co.nz-2020.10%201.png" alt="wine"></div>
-                <p class="store__name">Silver Oak</p>
-                <div class="store__price">
-                    <p class="store__discount">$500.00</p>
-                    <p class="store__price">$450.00</p>
-                </div>
-            </td>
-            <td class="store__products-td">
-                <div class="store__offer"><p class="store__text">30% off</p></div>
-                <div class="store__image"><img src="./img/screenshot-www.planetwine.co.nz-2020.10%201.png" alt="wine"></div>
-                <p class="store__name">Silver Oak</p>
-                <div class="store__price">
-                    <p class="store__discount">$500.00</p>
-                    <p class="store__price">$450.00</p>
-                </div>
-            </td>
-            <td class="store__products-td">
-                <div class="store__offer"><p class="store__text">30% off</p></div>
-                <div class="store__image"><img src="./img/screenshot-www.planetwine.co.nz-2020.10%201.png" alt="wine"></div>
-                <p class="store__name">Silver Oak</p>
-                <div class="store__price">
-                    <p class="store__discount">$500.00</p>
-                    <p class="store__price">$450.00</p>
-                </div>
-            </td>
-        </tr>
-        <tr class="store__products-tr">
-            <td class="store__products-td">
-                <div class="store__offer"><p class="store__text">30% off</p></div>
-                <div class="store__image"><img src="./img/screenshot-www.planetwine.co.nz-2020.10%201.png" alt="wine"></div>
-                <p class="store__name">Silver Oak</p>
-                <div class="store__price">
-                    <p class="store__discount">$500.00</p>
-                    <p class="store__price">$450.00</p>
-                </div>
-            </td>
-            <td class="store__products-td">
-                <div class="store__offer"><p class="store__text">30% off</p></div>
-                <div class="store__image"><img src="./img/screenshot-www.planetwine.co.nz-2020.10%201.png" alt="wine"></div>
-                <p class="store__name">Silver Oak</p>
-                <div class="store__price">
-                    <p class="store__discount">$500.00</p>
-                    <p class="store__price">$450.00</p>
-                </div>
-            </td>
-            <td class="store__products-td">
-                <div class="store__offer"><p class="store__text">30% off</p></div>
-                <div class="store__image"><img src="./img/screenshot-www.planetwine.co.nz-2020.10%201.png" alt="wine"></div>
-                <p class="store__name">Silver Oak</p>
-                <div class="store__price">
-                    <p class="store__discount">$500.00</p>
-                    <p class="store__price">$450.00</p>
-                </div>
-            </td>
-            <td class="store__products-td">
-                <div class="store__offer"><p class="store__text">30% off</p></div>
-                <div class="store__image"><img src="./img/screenshot-www.planetwine.co.nz-2020.10%201.png" alt="wine"></div>
-                <p class="store__name">Silver Oak</p>
-                <div class="store__price">
-                    <p class="store__discount">$500.00</p>
-                    <p class="store__price">$450.00</p>
-                </div>
-            </td>
-        </tr>
+        <tbody>
+            <tr class="store__products-tr">
+                <td class="store__products-td">
+                    <div class="store__offer"><p class="store__text">30% off</p></div>
+                    <div class="store__image"><img src="./img/screenshot-www.planetwine.co.nz-2020.10%201.png" alt="wine"></div>
+                    <p class="store__name">Silver Oak</p>
+                    <div class="store__price">
+                        <p class="store__discount">$500.00</p>
+                        <p class="store__price">$450.00</p>
+                    </div>
+                </td>
+                <td class="store__products-td">
+                    <div class="store__offer"><p class="store__text">30% off</p></div>
+                    <div class="store__image"><img src="./img/screenshot-www.planetwine.co.nz-2020.10%201.png" alt="wine"></div>
+                    <p class="store__name">Silver Oak</p>
+                    <div class="store__price">
+                        <p class="store__discount">$500.00</p>
+                        <p class="store__price">$450.00</p>
+                    </div>
+                </td>
+                <td class="store__products-td">
+                    <div class="store__offer"><p class="store__text">30% off</p></div>
+                    <div class="store__image"><img src="./img/screenshot-www.planetwine.co.nz-2020.10%201.png" alt="wine"></div>
+                    <p class="store__name">Silver Oak</p>
+                    <div class="store__price">
+                        <p class="store__discount">$500.00</p>
+                        <p class="store__price">$450.00</p>
+                    </div>
+                </td>
+                <td class="store__products-td">
+                    <div class="store__offer"><p class="store__text">30% off</p></div>
+                    <div class="store__image"><img src="./img/screenshot-www.planetwine.co.nz-2020.10%201.png" alt="wine"></div>
+                    <p class="store__name">Silver Oak</p>
+                    <div class="store__price">
+                        <p class="store__discount">$500.00</p>
+                        <p class="store__price">$450.00</p>
+                    </div>
+                </td>
+            </tr>
+            <tr class="store__products-tr">
+                <td class="store__products-td">
+                    <div class="store__offer"><p class="store__text">30% off</p></div>
+                    <div class="store__image"><img src="./img/screenshot-www.planetwine.co.nz-2020.10%201.png" alt="wine"></div>
+                    <p class="store__name">Silver Oak</p>
+                    <div class="store__price">
+                        <p class="store__discount">$500.00</p>
+                        <p class="store__price">$450.00</p>
+                    </div>
+                </td>
+                <td class="store__products-td">
+                    <div class="store__offer"><p class="store__text">30% off</p></div>
+                    <div class="store__image"><img src="./img/screenshot-www.planetwine.co.nz-2020.10%201.png" alt="wine"></div>
+                    <p class="store__name">Silver Oak</p>
+                    <div class="store__price">
+                        <p class="store__discount">$500.00</p>
+                        <p class="store__price">$450.00</p>
+                    </div>
+                </td>
+                <td class="store__products-td">
+                    <div class="store__offer"><p class="store__text">30% off</p></div>
+                    <div class="store__image"><img src="./img/screenshot-www.planetwine.co.nz-2020.10%201.png" alt="wine"></div>
+                    <p class="store__name">Silver Oak</p>
+                    <div class="store__price">
+                        <p class="store__discount">$500.00</p>
+                        <p class="store__price">$450.00</p>
+                    </div>
+                </td>
+                <td class="store__products-td">
+                    <div class="store__offer"><p class="store__text">30% off</p></div>
+                    <div class="store__image"><img src="./img/screenshot-www.planetwine.co.nz-2020.10%201.png" alt="wine"></div>
+                    <p class="store__name">Silver Oak</p>
+                    <div class="store__price">
+                        <p class="store__discount">$500.00</p>
+                        <p class="store__price">$450.00</p>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
     </table>
 
     <a class="store__link-title" href="#">View MORE</a>
+</div>
 </section>
 
-<section class="review__section">
-    <div class="store__title mb-58">
-        <h2>Client&nbsp;</h2>
-        <h2 style="color: #E2B024">Review</h2>
-    </div>
-    <div class="review__avatar"><img src="./img/avatar.png" alt="avatar" class="avatar"></div>
-    <h4 class="review__name">David Luice</h4>
-    <p class="review__text">    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget lectus pulvinar venenatis volutpat, lacinia sagittis.
-        Vulputate habitasse vel nisl, id consequat lacus. Et porttitor vestibulum, blandit quam id. Accumsan lacus,
-        non tincidunt sed pellentesque facilisi ornare pellentesque ullamcorpe</p>
-    <div class="review__slider">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
+<section class="review">
+    <div class="review__container">
+        <div class="store__title mb-58">
+            <h2>Client&nbsp;</h2>
+            <h2 style="color: #E2B024">Review</h2>
+        </div>
+        <div class="review__avatar"><img src="./img/avatar.png" alt="avatar" class="avatar"></div>
+        <h4 class="review__name">David Luice</h4>
+        <p class="review__text">    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget lectus pulvinar venenatis volutpat, lacinia sagittis.
+            Vulputate habitasse vel nisl, id consequat lacus. Et porttitor vestibulum, blandit quam id. Accumsan lacus,
+            non tincidunt sed pellentesque facilisi ornare pellentesque ullamcorpe</p>
+        <div class="review__slider">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </div>
 </section>
 
-<section class="news__section">
+<section class="news">
+    <div class="news__container">
     <div class="store__title mb-58">
         <h2>Amazing&nbsp;</h2>
         <h2 style="color: #E2B024">offer</h2>
     </div>
     <div class="news__offers">
         <div class="offer">
-            <img src="img/offer1.png" alt="special wine">
+            <img class="offer__image" src="img/offer1.png" alt="special wine">
             <div class="offer__text">
                 <h5 class="offer__title">pope valley winery</h5>
                 <p class="offer__price">$150.00</p>
             </div>
         </div>
         <div class="offer">
-            <img src="img/offer2.png" alt="special wine">
+            <img class="offer__image" src="img/offer2.png" alt="special wine">
             <div class="offer__text">
                 <h5 class="offer__title">pope valley winery</h5>
                 <p class="offer__price">$140.00</p>
             </div>
         </div>
         <div class="offer">
-            <img src="img/offer3.png" alt="special wine">
+            <img class="offer__image" src="img/offer3.png" alt="special wine">
             <div class="offer__text">
                 <h5 class="offer__title">pope valley winery</h5>
                 <p class="offer__price">$158.00</p>
@@ -233,15 +260,15 @@
                 <h5 class="events__title">10th Annual Barrel Tasting</h5>
                 <p class="events__date">15 Sept</p>
                 <p class="events__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nunc a in morbi. Ac, aenean iaculis purus turpis est sollicitudin blandit ut leo.</p>
-                <div ><a class="events__link" href="#">read more</a></div>
+                <div class="mb-89" ><a class="events__link" href="#">read more</a></div>
             </div>
             <a href="#" class="event__arrow-right"><img src="img/icons/arrow-right.png" alt="arrow-left"></a>
         </div>
-
+    </div>
 </section>
 
 <footer>
-
+    <div class="footer__container">
         <div class="store__title mb-58">
             <h2>Contact&nbsp;</h2>
             <h2 style="color: #E2B024">us</h2>
@@ -251,7 +278,7 @@
         <div class="contacts__about">
             <p class="contacts__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nunc a in morbi. Ac, aenean iaculis purus turpis est sollicitudin blandit ut leo.Lorem ipsum dolor sit amet, consectetur </p>
 
-            <div class="contacts__feedback">
+            <div class="contacts__feedback mb-60">
                 <div class="feedback">
                     <img class="feedback__image" src="img/icons/Call.svg" alt="phone icon">
                     <p class="feedback__text">+012-3254-6987</p>
@@ -286,27 +313,102 @@
         <div class="contacts__inputs">
 
             <div class="input__container">
-                <div class="contacts__input-name">Name</div>
+                <div class="contacts__title">Name</div>
                 <label><input class="contacts__input" type="text"></label>
             </div>
 
             <div class="input__container">
-                <label><input class="contacts__input" type="email"> Email </label>
+                <div class="contacts__title">Email</div>
+                <label><input class="contacts__input" type="email">  </label>
             </div>
 
             <div class="input__container">
-                <label><input class="contacts__input" type="tel"> Phone </label>
+                <div class="contacts__title">Phone</div>
+                <label><input class="contacts__input" type="tel">  </label>
             </div>
 
             <div class="input__container">
-                <label> <textarea class="contacts__input"></textarea> Message </label>
+                <div class="contacts__title">Message</div>
+                <label> <textarea class="contacts__input"></textarea>  </label>
             </div>
 
+            <button class="inputs__button">Send</button>
+        </div>
+    </div>
+    </div>
 
+    <div class="footer__subscribe">
+        <div class="footer__container">
+            <h2 class="subscribe__title">newsletter</h2>
+            <p class="subscribe__text">Sign Up to our newsletter and  Save 40% on next Purchase</p>
+            <div class="subscribe__container">
+                <label><input class="subscribe__input" type="email" placeholder="Email"></label>
+                <button class="subscribe__button">Subscribe</button>
+            </div>
+        </div>
+    </div>
 
-
-
-            <button>Send</button>
+    <div class="footer__links">
+        <div class="links__container">
+            <div class="links__contacts">
+                <h5 class="links__title">Company</h5>
+                    <a href="" class="links__text">About Us</a>
+                    <a href="" class="links__text">Contact Us</a>
+                    <a href="" class="links__text">Privacy Policy</a>
+                    <a href="" class="links__text">Terms & Conditions</a>
+                    <a href="" class="links__text">Support Center</a>
+            </div>
+            <div class="links__contacts">
+                <h5 class="links__title">question?</h5>
+                <a href="" class="links__text">Help Support</a>
+                <a href="" class="links__text">Track Order</a>
+                <a href="" class="links__text">Return</a>
+                <a href="" class="links__text">Shipping Info</a>
+                <a href="" class="links__text">History</a>
+            </div>
+            <div class="links__contacts">
+                <h5 class="links__title">useful links</h5>
+                <a href="" class="links__text">Gift Cards</a>
+                <a href="" class="links__text">Size Chart</a>
+                <a href="" class="links__text">My Account</a>
+                <a href="" class="links__text">Our Locations</a>
+                <a href="" class="links__text">FAQS</a>
+            </div>
+            <div class="links__contacts">
+                <h5 class="links__title">connect with us</h5>
+                <div class="network__links mb-29">
+                    <a class="network__link" href="#">
+                        <img class="network__image network__image-small"  src="img/icons/google.svg" alt="google">
+                    </a>
+                    <a class="network__link" href="#">
+                        <img class="network__image network__image-small" src="img/icons/twitter.svg" alt="twitter">
+                    </a>
+                    <a class="network__link" href="#">
+                        <img class="network__image network__image-small" src="img/icons/linkedin.svg" alt="linkedin">
+                    </a>
+                    <a class="network__link" href="#">
+                        <img class="network__image network__image-small" src="img/icons/facebook.svg" alt="facebook">
+                    </a>
+                </div>
+                <div class="contacts__feedback">
+                    <div class="feedback">
+                        <img class="feedback__image" src="img/icons/Call.svg" alt="phone icon">
+                        <p class="feedback__text">+012-3254-6987</p>
+                    </div>
+                    <div class="feedback">
+                        <img class="feedback__image"  src="img/icons/Message.svg" alt="email icon">
+                        <p class="feedback__text">Food&drink@gmail.com</p>
+                    </div>
+                    <div class="feedback">
+                        <img class="feedback__image"  src="img/icons/Location.svg" alt="location icon">
+                        <p class="feedback__text">Brahmanbaira, Dhaka, Bangladesh</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copyright">
+        <span></span>
+        <p>&copy; Copyright 2020 wine&food All Rights Reserved (Designhunterrbd) </p>
         </div>
     </div>
 

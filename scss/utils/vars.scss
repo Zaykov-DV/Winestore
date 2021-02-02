@@ -1,11 +1,17 @@
 // Font
-$mainFont                : 'Poppin', Arial, sans-serif;
-$titleFont               : 'Chocolate', Arial, sans-serif;
+$mainFont                : 'Poppins', Arial, sans-serif;
+$titleFont               : 'ChocolateBox', Arial, sans-serif;
 
 // Size
 $mainFontColor           : #FFFFFF;
-$smallFontSize           : 12px;
-$mainFontSize            : 16px;
+$xsmallFontSize          : 16px;
+$mainFontSize            : 18px;
+$smallFontSize           : 20px;
+$titleFontSize           : 24px;
+$mediumFontSize          : 36px;
+$xmediumFontSize         : 48px;
+$largeFontSize           : 74px;
+$xtitleFontSize          : 96px;
 $mainFontWeight          : 400;
 $mainLineHeight          : 100%;
 
@@ -18,6 +24,8 @@ $smPhoneWidth            : 320px;
 // Main color
 $default-color           : #ffffff;
 $primary-color           : #e2b024;
+$main-bg-color           : #000000;
+$secondary-bg-color      : #18191A;;
 
 .mt-11 { margin-top: 11px }
 .mb-13 {  margin-bottom: 13px }
@@ -27,3 +35,6 @@ $primary-color           : #e2b024;
 .mb-29 {  margin-bottom: 29px }
 .mr-60 { margin-right: 60px }
 .mb-58 { margin-bottom: 58px }
+.mb-60 { margin-bottom: 60px;}
+.ml-10 {  margin-left: 10px;}
+.mb-89 {margin-bottom: 89px;}

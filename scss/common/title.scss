@@ -1,6 +1,215 @@
-.title {
-  font-family: $mainFont;
-  font-size: 16px;
-  line-height: 9px;
+.heading__pre-title {
+  font-family: $titleFont;
+  font-weight: normal;
+  font-size: $titleFontSize;
+  line-height: 14px;
+  @media screen and (max-width: 400px) {
+    font-size: $mainFontSize;
+    margin-bottom: 16px;
+  }
 }
 
+.heading__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $titleFont;
+  font-weight: normal;
+  font-size: $xtitleFontSize;
+  line-height: 56px;
+    @media screen and (max-width: 880px) {
+      font-size: $largeFontSize;
+    }
+    @media screen and (max-width: 600px) {
+      font-size: $xmediumFontSize;
+    }
+    @media screen and (max-width: 400px) {
+    font-size: $mediumFontSize;
+}
+}
+
+.heading__description {
+  font-family: $mainFont;
+  font-weight: 300;
+  font-size: $xsmallFontSize;
+  line-height: 24px;
+  text-align: center;
+  width: 63%;
+}
+
+.promo__new  {
+  font-family: $mainFont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: $smallFontSize;
+  line-height: 170%;
+  letter-spacing: 0.35em;
+  margin-bottom: 47px;
+}
+
+.promo__title {
+  font-family: $titleFont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: $largeFontSize;
+  line-height: 43px;
+  color: #E2B024;
+  margin-bottom: 12px;
+  @media screen and (max-width: 480px) {
+    font-size: $xmediumFontSize;
+    margin-bottom: 40px;
+  }
+}
+
+.promo__subtitle {
+  font-family: $mainFont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: $mediumFontSize;
+  line-height: 170%;
+  margin-bottom: 52px;
+  @media screen and (max-width: 480px) {
+    font-size: $titleFontSize;
+    margin-bottom: 40px;
+  }
+}
+
+.promo__text {
+  font-family: $mainFont;
+  font-style: normal;
+  font-weight: 300;
+  font-size: $mainFontSize;
+  line-height: 32px;
+  margin-bottom: 64px;
+}
+
+.store__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $titleFont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: $largeFontSize;
+  line-height: 28px;
+  margin-bottom: 90px;
+  @media screen and (max-width: $tableWidth) {
+    font-size: $xmediumFontSize;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: $titleFontSize;
+    margin-bottom: 40px;
+  }
+}
+
+.store__text {
+  color: #000000;
+  @media screen and (max-width: 480px) {
+    font-size: 12px;
+  }
+}
+
+.store__name {
+  font-family: $titleFont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: $titleFontSize;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin-bottom: 9px;
+  text-align: center;
+}
+
+.store__discount {
+  font-family: $mainFont;
+  font-style: normal;
+  font-weight: 300;
+  font-size: $xsmallFontSize;
+  line-height: 24px;
+  color: #E2B024;
+  text-decoration: line-through;
+  margin-right: 5px;
+  @media screen and (max-width: 480px) {
+    font-size: 12px;
+  }
+}
+
+.store__price {
+  font-family: $mainFont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: $titleFontSize;
+  line-height: 36px;
+  color: #E2B024;
+  @media screen and (max-width: 480px) {
+    font-size: $smallFontSize;
+  }
+}
+
+.contacts__text {
+  max-width: 486px;
+  font-family: $mainFont;
+  font-style: normal;
+  font-weight: 300;
+  font-size: $mainFontSize;
+  line-height: 37px;
+  color: #FFFFFF;
+  margin-bottom: 77px;
+}
+
+.feedback__text {
+  font-family: $mainFont;
+  font-style: normal;
+  font-weight: 300;
+  font-size: $mainFontSize;
+  line-height: 31px;
+  color: #FFFFFF;
+}
+
+.subscribe__title {
+  font-family: $titleFont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: $largeFontSize;
+  line-height: 28px;
+  color: #E2B024;
+  margin: 57px 0 24px;
+  text-align: center;
+  @media screen and (max-width: $tableWidth) {
+    font-size: $xmediumFontSize;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: $mediumFontSize;
+  }
+}
+
+.subscribe__text {
+  font-family: $mainFont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: $mainFontSize;
+  line-height: 27px;
+  color: #FFFFFF;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.links__title {
+  font-family: $titleFont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: $titleFontSize;
+  line-height: 14px;
+  color: #E2B024;
+  margin-bottom: 42px;
+}
+.links__text {
+  font-family: $mainFont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: $xsmallFontSize;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin-bottom: 15px;
+  &:last-child { margin-bottom: 0;}
+}

@@ -16,5 +16,5 @@ gulp.task('server', function () {
        notify: false
       })
 
-gulp.watch('scss/common/*.scss', gulp.series('css')).on('change', server.reload)
+gulp.watch(('scss/common/*.scss' || 'scss/*.scss' || 'scss/utils/*.scss') , gulp.series('css')).on('change', server.reload)
 })

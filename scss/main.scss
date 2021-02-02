@@ -8,25 +8,34 @@ html {
   font-size: $mainFontSize;
   color: $mainFontColor;
   height: 100%;
-  @media screen and (max-width: $desktopWidth) {
-		font-size: 16px;
-  }
-  @media screen and (max-width: $tableWidth) {
-		font-size: 15px;
-  }
-  @media screen and (max-width: $phoneWidth) {
-		font-size: 14px;
-  }
+  //@media screen and (max-width: $desktopWidth) {
+	//	font-size: 16px;
+  //}
+  //@media screen and (max-width: $tableWidth) {
+	//	font-size: 15px;
+  //}
+  //@media screen and (max-width: $phoneWidth) {
+	//	font-size: 14px;
+  //}
 }
 
 @font-face {
-  font-family: "Chocolate";
+  font-family: "ChocolateBox";
   src: url("../fonts/ChocolateBox.woff");
 }
 @font-face {
-  font-family: "Poppin";
+  font-family: "Poppins";
   src: url("../fonts/Poppins-Regular.woff2");
   src: url("../fonts/Poppins-Regular.woff");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Light.woff2");
+  src: url("../fonts/Poppins-Light.woff");
+  font-style: normal;
+  font-weight: 300;
 }
 
 body {
@@ -37,16 +46,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
   margin: 0;
   padding: 0;
-  background-color: #000000;
+  width: 100%;
+  background-color: black;
 }
 
 *, *:before, *:after { box-sizing: border-box; }
 
-h1, h2, h3, h4, h5, h6 { margin: 0; }
+h1, h2, h3, h4, h5, h6 { margin: 0;}
 
-a {
-	text-decoration: none;
-}
+a {	text-decoration: none; }
 
 ul, li {
   list-style-type: none;
@@ -54,36 +62,19 @@ ul, li {
   padding: 0;
 }
 
-.promo, .store__section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.header, .promo__container, .promo__container, .review__container, .news__container, .store__container, .footer__container, .links__container {
   max-width: $desktopWidth;
   margin: 0 auto;
-  @media screen and (max-width: $desktopWidth) {
-    padding: 36px 0;
-  }
-  @media screen and (max-width: $desktopWidth) {
-    padding: 28px 0;
-  }
-  @media screen and (max-width: $desktopWidth) {
-    padding: 20px 0;
-  }
+  //@media screen and (max-width: 980px) {
+  //  max-width: 980px;
+  //}
+  //@media screen and (max-width: 768px) {
+  //  max-width: 768px;
+  //}
+  //@media screen and (max-width: 480px) {
+  //  max-width: 480px ;
+  //}
+  //@media screen and (max-width: 320px) {
+  //  max-width: 320px ;
+  //}
 }
-
-header, footer {
-  max-width: $desktopWidth;
-  margin: 0 auto;
-  @media screen and (max-width: $smDesktopWidth) {
-    max-width: $tableWidth;
-  }
-  @media screen and (max-width: $tableWidth) {
-    max-width: $phoneWidth;
-  }
-  @media screen and (max-width: $phoneWidth) {
-    max-width: $smPhoneWidth;
-  }
-}
-
-
-
