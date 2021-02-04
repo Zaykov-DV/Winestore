@@ -213,8 +213,8 @@ td, th {
 
 .component__button-prev {
   position: absolute;
-  top: 46%;
-  right: 95%;
+  top: 47%;
+  right: 90%;
   z-index: 3; }
   @media screen and (max-width: 650px) {
     .component__button-prev {
@@ -227,8 +227,8 @@ td, th {
 
 .component__button-next {
   position: absolute;
-  top: 46%;
-  left: 96%;
+  top: 47%;
+  left: 90%;
   z-index: 3; }
   @media screen and (max-width: 650px) {
     .component__button-next {
@@ -265,29 +265,86 @@ td, th {
       padding-bottom: 110px; } }
 
 .promo__description {
-  max-width: 525px; }
-  @media screen and (max-width: 550px) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 525px;
+  height: 487px; }
+  .promo__description .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start; }
+  @media screen and (max-width: 650px) {
     .promo__description {
-      max-width: 80%; } }
+      max-width: 500px;
+      margin-top: 150px; } }
+  @media screen and (max-width: 540px) {
+    .promo__description {
+      max-width: 400px;
+      margin-top: 100px; } }
+  @media screen and (max-width: 420px) {
+    .promo__description {
+      max-width: 300px;
+      margin-top: 50px; } }
+
+.promo__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 85%; }
+
+.swiper-slide-active .promo__subtitle, .swiper-slide-active .promo__title, .swiper-slide-active .promo__text {
+  max-width: 525px; }
+
+@media screen and (max-width: 650px) {
+  .swiper-slide-active {
+    max-width: 500px;
+    margin-top: 150px; } }
+
+@media screen and (max-width: 540px) {
+  .swiper-slide-active {
+    max-width: 400px;
+    margin-top: 100px; } }
+
+@media screen and (max-width: 420px) {
+  .swiper-slide-active {
+    max-width: 300px;
+    margin-top: 50px; } }
 
 .promo__components {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 560px;
-  max-height: 480px;
+  max-width: 650px;
+  max-height: 800px;
   position: relative;
   margin-right: 25px; }
   @media screen and (max-width: 1169px) {
     .promo__components {
       margin-top: 200px;
       margin-right: 0; } }
+  @media screen and (max-width: 650px) {
+    .promo__components {
+      max-width: 500px;
+      margin-top: 150px; } }
+  @media screen and (max-width: 540px) {
+    .promo__components {
+      max-width: 400px;
+      margin-top: 100px; } }
+  @media screen and (max-width: 420px) {
+    .promo__components {
+      max-width: 300px;
+      margin-top: 50px; } }
+  .promo__components .swiper-wrapper {
+    right: 40%; }
 
 .promo__component {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  position: absolute;
   z-index: 0; }
   @media screen and (max-width: 650px) {
     .promo__component {
@@ -300,7 +357,7 @@ td, th {
   right: 28%;
   z-index: 1; }
   @media screen and (max-width: 650px) {
-    .promo__image {
+    .promo__image img {
       max-width: 35%;
       top: -50%;
       right: 32%; } }
@@ -916,33 +973,28 @@ textarea {
   font-weight: normal;
   font-size: 20px;
   line-height: 170%;
-  letter-spacing: 0.35em;
-  margin-bottom: 47px; }
+  letter-spacing: 0.35em; }
 
 .promo__title {
   font-family: "ChocolateBox", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 74px;
-  line-height: 43px;
-  color: #E2B024;
-  margin-bottom: 12px; }
+  line-height: 48px;
+  color: #E2B024; }
   @media screen and (max-width: 480px) {
     .promo__title {
-      font-size: 48px;
-      margin-bottom: 40px; } }
+      font-size: 48px; } }
 
 .promo__subtitle {
   font-family: "Poppins", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
-  line-height: 170%;
-  margin-bottom: 52px; }
+  line-height: 170%; }
   @media screen and (max-width: 480px) {
     .promo__subtitle {
-      font-size: 24px;
-      margin-bottom: 40px; } }
+      font-size: 24px; } }
 
 .promo__text {
   font-family: "Poppins", Arial, sans-serif;
@@ -950,7 +1002,7 @@ textarea {
   font-weight: 300;
   font-size: 18px;
   line-height: 32px;
-  margin-bottom: 64px; }
+  max-height: 100px; }
 
 .store__title {
   display: flex;

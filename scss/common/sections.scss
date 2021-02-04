@@ -18,23 +18,86 @@
 }
 
 .promo__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
   max-width: 525px;
-  @media screen and (max-width: 550px) {
-    max-width: 80%;
+  height: 487px;
+  .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .swiper-wrapper {
+
+  }
+  @media screen and (max-width: 650px) {
+    max-width: 500px;
+    margin-top: 150px;
+  }
+  @media screen and (max-width: 540px) {
+    max-width: 400px;
+    margin-top: 100px;
+  }
+  @media screen and (max-width: 420px) {
+    max-width: 300px;
+    margin-top: 50px;
   }
 }
+
+.promo__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 85%;
+}
+
+  .swiper-slide-active {
+    .promo__subtitle,  .promo__title, .promo__text {
+      max-width: 525px;
+    }
+    @media screen and (max-width: 650px) {
+      max-width: 500px;
+      margin-top: 150px;
+    }
+    @media screen and (max-width: 540px) {
+      max-width: 400px;
+      margin-top: 100px;
+    }
+    @media screen and (max-width: 420px) {
+      max-width: 300px;
+      margin-top: 50px;
+    }
+  }
 
 .promo__components {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 560px;
-  max-height: 480px;
+  max-width: 650px;
+  max-height: 800px;
   position: relative;
   margin-right: 25px;
   @media screen and (max-width: 1169px) {
     margin-top: 200px;
     margin-right: 0;
+  }
+  @media screen and (max-width: 650px) {
+    max-width: 500px;
+    margin-top: 150px;
+  }
+  @media screen and (max-width: 540px) {
+    max-width: 400px;
+    margin-top: 100px;
+  }
+  @media screen and (max-width: 420px) {
+    max-width: 300px;
+    margin-top: 50px;
+  }
+  .swiper-wrapper {
+    right: 40%;
   }
 }
 
@@ -42,7 +105,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  position: absolute;
   z-index: 0;
   @media screen and (max-width: 650px) {
     max-width: 80%;
@@ -55,10 +118,12 @@
   top: -25%;
   right: 28%;
   z-index: 1;
-  @media screen and (max-width: 650px) {
-    max-width: 35%;
-    top: -50%;
-    right: 32%;
+  img {
+    @media screen and (max-width: 650px) {
+      max-width: 35%;
+      top: -50%;
+      right: 32%;
+    }
   }
 }
 

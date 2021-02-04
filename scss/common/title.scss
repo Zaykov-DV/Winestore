@@ -44,7 +44,6 @@
   font-size: $smallFontSize;
   line-height: 170%;
   letter-spacing: 0.35em;
-  margin-bottom: 47px;
 }
 
 .promo__title {
@@ -52,12 +51,10 @@
   font-style: normal;
   font-weight: normal;
   font-size: $largeFontSize;
-  line-height: 43px;
+  line-height: 48px;
   color: #E2B024;
-  margin-bottom: 12px;
   @media screen and (max-width: 480px) {
     font-size: $xmediumFontSize;
-    margin-bottom: 40px;
   }
 }
 
@@ -67,10 +64,8 @@
   font-weight: normal;
   font-size: $mediumFontSize;
   line-height: 170%;
-  margin-bottom: 52px;
   @media screen and (max-width: 480px) {
     font-size: $titleFontSize;
-    margin-bottom: 40px;
   }
 }
 
@@ -80,7 +75,7 @@
   font-weight: 300;
   font-size: $mainFontSize;
   line-height: 32px;
-  margin-bottom: 64px;
+  max-height: 100px;
 }
 
 .store__title {
