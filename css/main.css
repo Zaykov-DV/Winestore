@@ -210,6 +210,10 @@ td, th {
   .component__button:hover {
     color: #e2b024;
     border-bottom: 1px solid #E2B024; }
+  @media screen and (max-width: 375px) {
+    .component__button {
+      font-size: 16px;
+      line-height: 20px; } }
 
 .component__button-prev {
   position: absolute;
@@ -218,11 +222,15 @@ td, th {
   z-index: 3; }
   @media screen and (max-width: 650px) {
     .component__button-prev {
-      top: 45%;
+      top: 46%;
       right: 85%; } }
   @media screen and (max-width: 500px) {
     .component__button-prev {
-      top: 43%;
+      top: 45%;
+      right: 84%; } }
+  @media screen and (max-width: 375px) {
+    .component__button-prev {
+      top: 46%;
       right: 84%; } }
 
 .component__button-next {
@@ -232,11 +240,15 @@ td, th {
   z-index: 3; }
   @media screen and (max-width: 650px) {
     .component__button-next {
-      top: 45%;
+      top: 46%;
       left: 85%; } }
   @media screen and (max-width: 500px) {
     .component__button-next {
-      top: 43%;
+      top: 45%;
+      left: 84%; } }
+  @media screen and (max-width: 375px) {
+    .component__button-next {
+      top: 46%;
       left: 84%; } }
 
 .subscribe__button {
@@ -279,46 +291,48 @@ td, th {
   @media screen and (max-width: 650px) {
     .promo__description {
       max-width: 500px;
-      margin-top: 150px; } }
+      height: 600px;
+      margin-top: 0; } }
   @media screen and (max-width: 540px) {
     .promo__description {
-      max-width: 400px;
-      margin-top: 100px; } }
+      max-width: 400px; } }
   @media screen and (max-width: 420px) {
     .promo__description {
-      max-width: 300px;
-      margin-top: 50px; } }
+      height: 650px;
+      max-width: 300px; } }
 
 .promo__buttons {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   width: 85%; }
+  @media screen and (max-width: 650px) {
+    .promo__buttons {
+      flex-direction: column;
+      align-items: center;
+      width: 100%; } }
 
 .swiper-slide-active .promo__subtitle, .swiper-slide-active .promo__title, .swiper-slide-active .promo__text {
   max-width: 525px; }
 
 @media screen and (max-width: 650px) {
   .swiper-slide-active {
-    max-width: 500px;
-    margin-top: 150px; } }
+    max-width: 500px; } }
 
 @media screen and (max-width: 540px) {
   .swiper-slide-active {
-    max-width: 400px;
-    margin-top: 100px; } }
+    max-width: 400px; } }
 
 @media screen and (max-width: 420px) {
   .swiper-slide-active {
-    max-width: 300px;
-    margin-top: 50px; } }
+    max-width: 300px; } }
 
 .promo__components {
   display: flex;
   justify-content: center;
   align-items: center;
   max-width: 650px;
-  max-height: 800px;
+  max-height: 600px;
   position: relative;
   margin-right: 25px; }
   @media screen and (max-width: 1169px) {
@@ -328,11 +342,11 @@ td, th {
   @media screen and (max-width: 650px) {
     .promo__components {
       max-width: 500px;
-      margin-top: 150px; } }
+      margin-top: 100px; } }
   @media screen and (max-width: 540px) {
     .promo__components {
       max-width: 400px;
-      margin-top: 100px; } }
+      margin-top: 80px; } }
   @media screen and (max-width: 420px) {
     .promo__components {
       max-width: 300px;
@@ -1003,6 +1017,9 @@ textarea {
   font-size: 18px;
   line-height: 32px;
   max-height: 100px; }
+  @media screen and (max-width: 650px) {
+    .promo__text {
+      max-height: 300px; } }
 
 .store__title {
   display: flex;
