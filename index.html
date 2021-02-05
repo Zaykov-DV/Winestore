@@ -7,13 +7,8 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-<!--    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">-->
-<!--    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>-->
-<!--    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">-->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
 
@@ -115,19 +110,11 @@
         </div>
         <div class="promo__components swiper-container  " >
             <img class="promo__component" src="./img/Component.png" alt="circle">
-<!--            <div class="  " data-glide-el="track" >-->
                 <div class="swiper-wrapper">
                     <div  class="promo__image swiper-slide "><img class="" src="./img/bottle-promo.png" alt="promo wine"></div>
                     <div  class="promo__image swiper-slide"><img class="" src="./img/bottle-promo.png" alt="promo wine"></div>
                     <div  class="promo__image swiper-slide"><img class="" src="./img/bottle-promo.png" alt="promo wine"></div>
                 </div>
-
-<!--            <div data-glide-el="controls">-->
-<!--                <button class="component__button component__button-prev" data-glide-dir="<">Prev</button>-->
-<!--                <button class="component__button component__button-next" data-glide-dir=">">Next</button>-->
-<!--            </div>-->
-<!--            <button class="component__button component__button-prev">Prev</button>-->
-<!--            <button class="component__button component__button-next">Next</button>            -->
             <button class="component__button component__button-prev">Prev</button>
             <button class="component__button component__button-next">Next</button>
         </div>
@@ -239,16 +226,40 @@
             <h2>Client&nbsp;</h2>
             <h2 style="color: #E2B024">Review</h2>
         </div>
-        <div class="review__avatar"><img src="./img/avatar.png" alt="avatar" class="avatar"></div>
-        <h4 class="review__name">David Luice</h4>
-        <p class="review__text">    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget lectus pulvinar venenatis volutpat, lacinia sagittis.
-            Vulputate habitasse vel nisl, id consequat lacus. Et porttitor vestibulum, blandit quam id. Accumsan lacus,
-            non tincidunt sed pellentesque facilisi ornare pellentesque ullamcorpe</p>
-        <div class="review__slider">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+        <div class="review-swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="review__avatar"><img src="./img/avatar.png" alt="avatar" class="avatar"></div>
+                    <div class="review__descr">
+                        <h4 class="review__name">David Luice</h4>
+                        <p class="review__text">    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget lectus pulvinar venenatis volutpat, lacinia sagittis.
+                            Vulputate habitasse vel nisl, id consequat lacus. Et porttitor vestibulum, blandit quam id. Accumsan lacus,
+                            non tincidunt sed pellentesque facilisi ornare pellentesque ullamcorpe</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="review__avatar"><img src="./img/avatar.png" alt="avatar" class="avatar"></div>
+                    <div class="review__descr">
+                        <h4 class="review__name">Alias aperiam</h4>
+                        <p class="review__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab esse molestias natus neque, nobis perferendis temporibus totam vel. Asperiores commodi magni nemo officia perspiciatis quibusdam quod sint sit voluptas voluptatum.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="review__avatar"><img src="./img/avatar.png" alt="avatar" class="avatar"></div>
+                    <div class="review__descr">
+                        <h4 class="review__name">Lorem ipsum</h4>
+                        <p class="review__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aperiam corporis harum hic illo laboriosam mollitia nemo nostrum sequi! Animi asperiores numquam quaerat? Aliquid, architecto culpa dicta ducimus eaque harum nostrum quae quaerat quam quis. </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="review__avatar"><img src="./img/avatar.png" alt="avatar" class="avatar"></div>
+                    <div class="review__descr">
+                        <h4 class="review__name">Lorem ipsum</h4>
+                        <p class="review__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aperiam corporis harum hic illo laboriosam mollitia nemo nostrum sequi! Animi asperiores numquam quaerat? Aliquid, architecto culpa dicta ducimus eaque harum nostrum quae quaerat quam quis. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
         </div>
     </div>
 </section>
@@ -260,28 +271,45 @@
         <h2 style="color: #E2B024">offer</h2>
     </div>
     <div class="news__offers">
-        <div class="offer">
-            <img class="offer__image" src="img/offer1.png" alt="special wine">
-            <div class="offer__text">
-                <h5 class="offer__title">pope valley winery</h5>
-                <p class="offer__price">$150.00</p>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="offer">
+                        <img class="offer__image" src="img/offer1.png" alt="special wine">
+                        <div class="offer__text">
+                            <h5 class="offer__title">pope valley winery</h5>
+                            <p class="offer__price">$150.00</p>
+                        </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="offer">
+                        <img class="offer__image" src="img/offer1.png" alt="special wine">
+                        <div class="offer__text">
+                            <h5 class="offer__title">pope valley winery</h5>
+                            <p class="offer__price">$150.00</p>
+                        </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="offer">
+                        <img class="offer__image" src="img/offer1.png" alt="special wine">
+                        <div class="offer__text">
+                            <h5 class="offer__title">pope valley winery</h5>
+                            <p class="offer__price">$150.00</p>
+                        </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="offer">
+                        <img class="offer__image" src="img/offer1.png" alt="special wine">
+                        <div class="offer__text">
+                            <h5 class="offer__title">pope valley winery</h5>
+                            <p class="offer__price">$150.00</p>
+                        </div>
+                </div>
             </div>
         </div>
-        <div class="offer">
-            <img class="offer__image" src="img/offer2.png" alt="special wine">
-            <div class="offer__text">
-                <h5 class="offer__title">pope valley winery</h5>
-                <p class="offer__price">$140.00</p>
-            </div>
-        </div>
-        <div class="offer">
-            <img class="offer__image" src="img/offer3.png" alt="special wine">
-            <div class="offer__text">
-                <h5 class="offer__title">pope valley winery</h5>
-                <p class="offer__price">$158.00</p>
-            </div>
-        </div>
-
+        <div class="swiper-pagination"></div>
     </div>
     <div class="review__slider">
         <span></span>
@@ -290,24 +318,31 @@
         <span></span>
     </div>
 
-    <div class="store__title mb-58">
-        <h2>Featured&nbsp;</h2>
-        <h2 style="color: #E2B024">events</h2>
-    </div>
-
-        <div class="event">
-            <a href="#" class="event__arrow-left"><img src="img/icons/arrow-left.png" alt="arrow-left"></a>
-            <div class="events__image">
-                <img src="img/event.png" alt="event">
+        <div class="event__wrapper">
+            <div class="store__title mb-58">
+                <h2>Featured&nbsp;</h2>
+                <h2 style="color: #E2B024">events</h2>
             </div>
-            <div class="events__text">
-                <h5 class="events__title">10th Annual Barrel Tasting</h5>
-                <p class="events__date">15 Sept</p>
-                <p class="events__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nunc a in morbi. Ac, aenean iaculis purus turpis est sollicitudin blandit ut leo.</p>
-                <div class="mb-89" ><a class="events__link" href="#">read more</a></div>
+                <div class="event">
+                    <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="events__container">
+                                    <div class="events__image">
+                                        <img src="img/event.png" alt="event">
+                                    </div>
+                                    <div class="events__text">
+                                        <h5 class="events__title">10th Annual Barrel Tasting</h5>
+                                        <p class="events__date">15 Sept</p>
+                                        <p class="events__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nunc a in morbi. Ac, aenean iaculis purus turpis est sollicitudin blandit ut leo.</p>
+                                        <div class="mb-89" ><a class="events__link" href="#">read more</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="event__arrow-right"><img src="img/icons/arrow-right.png" alt="arrow-left"></a>
+                <a href="#" class="event__arrow-left"><img src="img/icons/arrow-left.png" alt="arrow-left"></a>
             </div>
-            <a href="#" class="event__arrow-right"><img src="img/icons/arrow-right.png" alt="arrow-left"></a>
-        </div>
     </div>
 </section>
 
@@ -458,15 +493,9 @@
 
 </footer>
 
-<!--<script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>-->
-<!--<script>-->
-<!--    new Glide('.glide', {-->
-<!--        type: 'carousel',-->
-<!--        startAt: 0,-->
-<!--        perView: 1-->
-<!--    })-->
-<!--        .mount()-->
-<!--</script>-->
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 <script>
     const swiper = new Swiper('.swiper-container', {
         // Optional parameters
@@ -479,13 +508,46 @@
             nextEl: '.component__button-prev',
             prevEl: '.component__button-next',
         },
-        // breakpoints: {
-        //     650: {
-        //         slidesPerView: 1,
-        //         spaceBetween: 500
-        //     },
-        // }
     });
+    const swiperReview = new Swiper('.review-swiper-container', {
+        // Optional parameters
+        slidesPerView: 1,
+        direction: 'horizontal',
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+        },
+    });
+    const swiperOffer = new Swiper('.news__offers', {
+        // Optional parameters
+        slidesPerView: 1,
+        spaceBetween: 30,
+        direction: 'horizontal',
+        loop: true,
+        centeredSlides: true,
+        initialSlide: 2,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+        },
+        breakpoints : {
+            1150 : {
+                slidesPerView: 3,
+            }
+        }
+    });
+    const swiperEvents = new Swiper('.event', {
+        slidesPerView: 1,
+        spaceBetween: 125,
+        direction: 'horizontal',
+        loop: true,
+        // Navigation arrows
+        navigation: {
+            nextEl: '.event__arrow-right',
+            prevEl: '.event__arrow-left',
+        },
+    })
 </script>
 </body>
 </html>
