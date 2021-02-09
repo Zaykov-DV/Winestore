@@ -13,11 +13,11 @@
     color: #1F1F1F;
   }
   @media screen and (max-width: 1169px) {
-    width: 70%;
+    width: 49%;
     margin-right: 0;
     margin-bottom: 10px;
   }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 650px) {
     width: 100%;
     margin-bottom: 10px;
   }
@@ -58,41 +58,41 @@
 }
 
 .component__button-prev {
-  position: absolute;
-  top: 47%;
-  right: 90%;
-  z-index: 3;
-  @media screen and (max-width: 650px) {
-    top: 46%;
-    right: 85%;
-  }
-  @media screen and (max-width: 500px) {
-    top: 45%;
-    right: 84%;
-  }
-  @media screen and (max-width: 375px) {
-    top: 46%;
-    right: 84%;
-  }
+  //position: absolute;
+  //top: 47%;
+  //left: -100%;
+  //z-index: 3;
+  //@media screen and (max-width: 650px) {
+  //  top: 46%;
+  //  right: 85%;
+  //}
+  //@media screen and (max-width: 500px) {
+  //  top: 45%;
+  //  right: 84%;
+  //}
+  //@media screen and (max-width: 375px) {
+  //  top: 46%;
+  //  right: 84%;
+  //}
 }
 
 .component__button-next {
-  position: absolute;
-  top: 47%;
-  left: 90%;
-  z-index: 3;
-  @media screen and (max-width: 650px) {
-    top: 46%;
-    left: 85%;
-  }
-  @media screen and (max-width: 500px) {
-    top: 45%;
-    left: 84%;
-  }
-  @media screen and (max-width: 375px) {
-    top: 46%;
-    left: 84%;
-  }
+  //position: absolute;
+  //top: 47%;
+  //right: -100%;
+  //z-index: 3;
+  //@media screen and (max-width: 650px) {
+  //  top: 46%;
+  //  left: 85%;
+  //}
+  //@media screen and (max-width: 500px) {
+  //  top: 45%;
+  //  left: 84%;
+  //}
+  //@media screen and (max-width: 375px) {
+  //  top: 46%;
+  //  left: 84%;
+  //}
 }
 
 .subscribe__button {
