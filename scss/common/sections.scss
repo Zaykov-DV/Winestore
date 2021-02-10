@@ -54,6 +54,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media screen and (max-width: 1169px) {
+    flex-direction: column;
+  }
 }
 
 .promo__buttons {
@@ -75,24 +78,8 @@
   justify-content: space-between;
   align-items: center;
   position: absolute;
-  //top: 47%;
   width: 107%;
 }
-
-  .swiper-slide-active {
-    .promo__subtitle,  .promo__title, .promo__text {
-      max-width: 525px;
-    }
-    @media screen and (max-width: 650px) {
-      max-width: 500px;
-    }
-    @media screen and (max-width: 540px) {
-      max-width: 400px;
-    }
-    @media screen and (max-width: 420px) {
-      max-width: 300px;
-    }
-  }
 
 .promo__components {
   display: flex;

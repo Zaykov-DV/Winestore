@@ -275,6 +275,9 @@ td, th {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media screen and (max-width: 1169px) {
+    .promo__description {
+      flex-direction: column; } }
 
 .promo__buttons {
   display: flex;
@@ -295,21 +298,6 @@ td, th {
   align-items: center;
   position: absolute;
   width: 107%; }
-
-.swiper-slide-active .promo__subtitle, .swiper-slide-active .promo__title, .swiper-slide-active .promo__text {
-  max-width: 525px; }
-
-@media screen and (max-width: 650px) {
-  .swiper-slide-active {
-    max-width: 500px; } }
-
-@media screen and (max-width: 540px) {
-  .swiper-slide-active {
-    max-width: 400px; } }
-
-@media screen and (max-width: 420px) {
-  .swiper-slide-active {
-    max-width: 300px; } }
 
 .promo__components {
   display: flex;
@@ -481,6 +469,11 @@ td, th {
   justify-content: center;
   align-items: center;
   margin-bottom: 30px; }
+  .review__avatar img {
+    width: 200px;
+    height: 200px;
+    border: 5px #FFFFFF solid;
+    border-radius: 50%; }
 
 .review__descr {
   display: flex;
@@ -591,7 +584,8 @@ td, th {
       line-height: 14px; } }
 
 .offer__image {
-  width: 95%; }
+  width: 95%;
+  height: 558px; }
 
 .event {
   max-width: 1170px;
@@ -1030,7 +1024,8 @@ textarea {
   font-weight: 300;
   font-size: 18px;
   line-height: 32px;
-  max-height: 100px; }
+  max-height: 100px;
+  overflow: hidden; }
   @media screen and (max-width: 650px) {
     .promo__text {
       max-height: 300px; } }
